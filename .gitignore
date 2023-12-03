@@ -1,0 +1,14 @@
+/cache/
+/dist/
+/node_modules/
+/public/legacy/cache/
+/.idea
+/logs/
+/dist
+/public/dist/
+*.log
+/public/legacy/upload
+/public/legacy/custom/history/
+/public/legacy/custom/modulebuilder/packages/ExportProjectZips/
+/public/legacy/suitecrm.log
+/vendor

@@ -1,0 +1,8 @@
+<?php
+// WARNING: The contents of this file are auto-generated
+
+
+//THIS FILE IS AUTO GENERATED, DO NOT MODIFY
+$mod_strings['LBL_BI_ACTIONMANAGEMENT_BI_DEFAULTDESCRIPTIONS_FROM_BI_ACTIONMANAGEMENT_TITLE'] = 'اقدامات';
+$mod_strings['LBL_BI_REQUESTKINDS_BI_DEFAULTDESCRIPTIONS_FROM_BI_REQUESTKINDS_TITLE'] = 'اطلاعات پایه انواع درخواست';
+
