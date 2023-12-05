@@ -39,8 +39,8 @@
  */
 *}
 <!--Start Responsive Top Navigation Menu -->
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
+<nav class="navbar navbar-inverse navbar-fixed-top tnc__navbar" role="navigation">
+    <div class="container-fluid tnc__navbar--container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="dropdown">
                 <span class="sr-only">Toggle navigation</span>
@@ -83,7 +83,7 @@
                             <span class="modulename" data-toggle="dropdown" aria-expanded="false">
                                 {sugar_link id="moduleTab_$name" module=$name data=$module caret=true}
                             </span>
-                                <ul class="dropdown-menu" role="menu">
+                                <ul class="dropdown-menu tnc__dropdown-menu" role="menu">
                                 {if $name !='Home'}
                                     {if is_array($shortcutTopMenu.$name) && count($shortcutTopMenu.$name) > 0}
                                         <li class="mobile-current-actions" role="presentation">
@@ -166,9 +166,6 @@
                     <li class="navbar-brand-container">
                             <a class="navbar-brand with-home-icon suitepicon suitepicon-action-home" href="index.php?module=Home&action=index"></a>
                     </li>
-                    <li class="navbar-brand-container">
-                            <a class="navbar-brand" href="http://google.com">سلام</a>
-                    </li>
                     {assign var="groupSelected" value=false}
                     {foreach from=$moduleTopMenu item=module key=name name=moduleList}
                         {if $name == $MODULE_TAB}
@@ -196,7 +193,7 @@
                                     {if $foundRecents || $foundFavorits
                                         || (is_array($shortcutTopMenu.$name) && count($shortcutTopMenu.$name) > 0)}
 
-                                        <ul class="dropdown-menu" role="menu">
+                                        <ul class="dropdown-menu tnc__dropdown-menu" role="menu">
                                             <li class="current-module-action-links">
                                                 <ul>
                                                     {if is_array($shortcutTopMenu.$name)
@@ -292,7 +289,7 @@
                             <span class="notCurrentTabLeft">&nbsp;</span><span class="notCurrentTab">
                             <a href="#" id="grouptab_{$smarty.foreach.groupList.index}" class="dropdown-toggle grouptab">{$group}</a>
                             <span class="notCurrentTabRight">&nbsp;</span>
-                            <ul class="dropdown-menu" role="menu" {if $smarty.foreach.groupList.last} class="All"{/if}>
+                            <ul class="dropdown-menu tnc__dropdown-menu" role="menu" {if $smarty.foreach.groupList.last} class="All"{/if}>
                                 {foreach from=$modules.modules item=module key=modulekey}
                                     <li>
                                         {capture name=moduleTabId assign=moduleTabId}moduleTab_{$smarty.foreach.moduleList.index}_{$module}{/capture}
@@ -350,7 +347,7 @@
                                 <span class="notCurrentTabLeft">&nbsp;</span>
                                 <span class="dropdown-toggle headerlinks notCurrentTab"> <a href="{sugar_link module=$submodule link_only=1 extraparams=$extraparams}">{$submodulename}</a> </span>
                                 <span class="notCurrentTabRight">&nbsp;</span>
-                                <ul class="dropdown-menu" role="menu">
+                                <ul class="dropdown-menu tnc__dropdown-menu" role="menu">
                                     <li>
                                         <ul>
                                             {if is_array($shortcutTopMenu) && count($shortcutTopMenu) > 0}
@@ -498,7 +495,7 @@
                     <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                         {$APP.LBL_CREATE_BUTTON_LABEL}<span class="suitepicon suitepicon-action-caret"></span>
                     </a>
-                    <ul class="dropdown-menu" role="menu">
+                    <ul class="dropdown-menu tnc__dropdown-menu" role="menu">
                         <li><a href="index.php?module=Accounts&action=EditView&return_module=Accounts&return_action=DetailView">{$APP.LBL_QUICK_CREATE}{sugar_translate module="Accounts" label="LBL_MODULE_NAME"}</a></li>
                         <li><a href="index.php?module=Contacts&action=EditView&return_module=Contacts&return_action=DetailView">{$APP.LBL_QUICK_CREATE}{sugar_translate module="Contacts" label="LBL_MODULE_NAME"}</a></li>
                         <li><a href="index.php?module=Opportunities&action=EditView&return_module=Opportunities&return_action=DetailView">{$APP.LBL_QUICK_CREATE}{sugar_translate module="Opportunities" label="LBL_MODULE_NAME"}</a></li>
@@ -587,7 +584,7 @@
                     <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                         {$APP.LBL_CREATE_BUTTON_LABEL}<span class="suitepicon suitepicon-action-caret"></span>
                     </a>
-                    <ul class="dropdown-menu" role="menu">
+                    <ul class="dropdown-menu tnc__dropdown-menu" role="menu">
                         <li><a href="index.php?module=Accounts&action=EditView&return_module=Accounts&return_action=DetailView">{$APP.LBL_QUICK_CREATE}{sugar_translate module="Accounts" label="LBL_MODULE_NAME"}</a></li>
                         <li><a href="index.php?module=Contacts&action=EditView&return_module=Contacts&return_action=DetailView">{$APP.LBL_QUICK_CREATE}{sugar_translate module="Contacts" label="LBL_MODULE_NAME"}</a></li>
                         <li><a href="index.php?module=Opportunities&action=EditView&return_module=Opportunities&return_action=DetailView">{$APP.LBL_QUICK_CREATE}{sugar_translate module="Opportunities" label="LBL_MODULE_NAME"}</a></li>
@@ -671,13 +668,13 @@
                 </li>
             </ul>
         </div>
-        <div class="desktop-bar">
+        <div class="desktop-bar tnc__desktop-bar">
             <ul id="toolbar" class="toolbar">
                 <li id="quickcreatetop" class="create dropdown nav navbar-nav quickcreatetop">
                     <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                         {$APP.LBL_CREATE_BUTTON_LABEL}<span class="suitepicon suitepicon-action-caret"></span>
                     </a>
-                    <ul class="dropdown-menu" role="menu">
+                    <ul class="dropdown-menu tnc__dropdown-menu" role="menu">
                         <li><a href="index.php?module=Accounts&action=EditView&return_module=Accounts&return_action=DetailView">{$APP.LBL_QUICK_CREATE}{sugar_translate module="Accounts" label="LBL_MODULE_NAME"}</a></li>
                         <li><a href="index.php?module=Contacts&action=EditView&return_module=Contacts&return_action=DetailView">{$APP.LBL_QUICK_CREATE}{sugar_translate module="Contacts" label="LBL_MODULE_NAME"}</a></li>
                         <li><a href="index.php?module=Opportunities&action=EditView&return_module=Opportunities&return_action=DetailView">{$APP.LBL_QUICK_CREATE}{sugar_translate module="Opportunities" label="LBL_MODULE_NAME"}</a></li>

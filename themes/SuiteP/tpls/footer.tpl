@@ -44,8 +44,9 @@
 <!-- Start Footer Section -->
 {if $AUTHENTICATED}
     <!-- Start generic footer -->
-    <footer>
-        <div id="copyright_data" class="footer_left">
+    <footer class="footer">
+        <div class="copyright-links w-100 d-flex align-items-center justify-content-center"><span class="footer-link"> [ مهندسی نرم افزار هلو <span>1402</span> ] </span></div>
+      <!--  <div id="copyright_data" class="footer_left">
             <div id="dialog2" title="{$APP.LBL_SUITE_SUPERCHARGED}" style="display: none">
                 <p>{$APP.LBL_SUITE_DESC1}</p>
                 <br>
@@ -67,7 +68,8 @@
             <span class="glyphicon glyphicon-globe"></span> {$STATISTICS}
         </div>
         {/if}
-    	<div class="footer_right">
+ -->
+    	<div class="footer_right tnc__footer_right">
     		
     		<a onclick="SUGAR.util.top();" href="javascript:void(0)">{$APP.LBL_SUITE_TOP}<span class="suitepicon suitepicon-action-above"></span> </a>
     	</div>
