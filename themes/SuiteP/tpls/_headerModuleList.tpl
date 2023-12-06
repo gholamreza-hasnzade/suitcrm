@@ -733,7 +733,7 @@
                         <span class="globallabel-user">{$CURRENT_USER}</span>
                         <span class="suitepicon suitepicon-action-caret"></span>
                     </button>
-                    <ul class="dropdown-menu user-dropdown user-menu" role="menu" aria-labelledby="with-label">
+                    <ul class="dropdown-menu tnc__globalLinks user-dropdown user-menu" role="menu" aria-labelledby="with-label">
                         <li role="presentation">
                             <a href='index.php?module=Users&action=EditView&record={$CURRENT_USER_ID}'>
                                 {$APP.LBL_PROFILE}

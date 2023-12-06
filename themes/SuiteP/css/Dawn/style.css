@@ -36882,7 +36882,8 @@ body>.le_panel .le_edit,
     direction: rtl !important;
     display: flex !important;
     justify-content: space-between !important;
-    gap: 20px;
+    gap: 40px;
+    background: #4285f4;
 }
 
 .tnc__navbar--container-fluid{
@@ -36906,6 +36907,13 @@ font-size: 12px;
 .dropdown-menu.tnc__dropdown-menu {
     right: 0 !important; 
     
+}
+.dropdown-menu.tnc__globalLinks{
+    left: 0;
+    right: unset;
+}
+#globalLinks>.dropdown-toggle, #desktop_notifications>.alertsButton {
+    background-color: #4285f4;
 }
 
 /*  footer  */
