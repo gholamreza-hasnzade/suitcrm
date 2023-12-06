@@ -36633,8 +36633,10 @@ body>.le_panel .le_edit,
     margin: 0;
     margin-top: 15px;
     font-family: iransans;
-    color: #848484; }
-  
+    color: #848484;
+    /* background-color: rgba(8, 116, 170); */
+}
+
 .btn_crm {
     padding: 0 25px !important;
     height: 30px !important;
@@ -36881,15 +36883,15 @@ body>.le_panel .le_edit,
     background: url(/images/eye_slash_icon.svg) no-repeat center center;
 }
 
-.tnc__navbar{
+.tnc__navbar {
     direction: rtl !important;
     display: flex !important;
     justify-content: space-between !important;
     gap: 40px;
-    background: #4285f4;
+    background-color: rgba(8, 116, 170);
 }
 
-.tnc__navbar--container-fluid{
+.tnc__navbar--container-fluid {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -36898,25 +36900,55 @@ body>.le_panel .le_edit,
 
 }
 
-.tnc__desktop-bar{
+.tnc__desktop-bar {
     text-align: left;
 }
 
 .navbar-inverse.tnc__navbar .dropdown-menu li a {
-text-align: right;
-font-family: iransans !important;
-font-size: 12px;
+    text-align: right;
+    font-family: iransans !important;
+    font-size: 12px;
 }
+
 .dropdown-menu.tnc__dropdown-menu {
-    right: 0 !important; 
-    
+    right: 0 !important;
+    background-color:  #1084BA;;
+
 }
-.dropdown-menu.tnc__globalLinks{
+.navbar-inverse .dropdown-menu li a:hover {
+    background: #005D93;
+    color: #fff;
+}
+
+.navbar-inverse .dropdown-menu li a{
+    background-color:  #1084BA;
+    border-bottom: 1px solid #fff;
+}
+
+.dropdown-menu.tnc__globalLinks {
     left: 0;
     right: unset;
+    background-color:  #1084BA;;
+
 }
-#globalLinks>.dropdown-toggle, #desktop_notifications>.alertsButton {
-    background-color: #4285f4;
+.navbar-inverse .navbar-nav > li > a.with-home-icon:hover {
+    color:  #fff;
+}
+.searchform .query_string {
+    background-color:  #1084BA;;
+    -webkit-box-shadow: unset;
+}
+.navbar-form.searchform .input-group-btn {
+    background-color:  #1084BA;;
+}
+.desktop_notifications .dropdown-menu {
+    background-color:  #1084BA;;
+
+}
+
+#globalLinks>.dropdown-toggle,
+#desktop_notifications>.alertsButton {
+    background-color: rgba(8, 116, 170);
 }
 
 /*  footer  */
@@ -36933,26 +36965,30 @@ font-size: 12px;
 
     display: flex;
     align-items: center;
-    justify-content: center;}  .footer-link{
-    font-family: iransans !important;
-  }
+    justify-content: center;
+}
 
-  .footer_right.tnc__footer_right {
-        padding-right: 0;
-        float: right;
-        text-align: right;
-        text-transform: uppercase;
-        position: fixed;
-        bottom: 50px;
-        right:  30px;
-        background: #fff;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-  }
-  .footer_right.tnc__footer_right a {
+.footer-link {
+    font-family: iransans !important;
+}
+
+.footer_right.tnc__footer_right {
+    padding-right: 0;
+    float: right;
+    text-align: right;
+    text-transform: uppercase;
+    position: fixed;
+    bottom: 3px;
+    right: 30px;
+    background: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer_right.tnc__footer_right a {
     font-size: 12px;
     color: #333;
     letter-spacing: 1px;
@@ -36963,4 +36999,24 @@ font-size: 12px;
     justify-content: center;
     padding: 5px;
     border: 1px solid black;
-  }
+}
+
+.topnav:hover{
+background-color: #1084BA;
+}
+
+.navbar-inverse .nav>.topnav>span.notCurrentTab>a:hover {
+    background-color: #1084BA;
+    border-top: 3px solid #fff;
+    color: #fff;
+}
+/* 
+  برای افزایش روشنایی:
+افزایش مقدار سفید در رنگ اصلی، مثلاً افزایش مقدار RGB برای حالت hover به 16, 132, 186. 
+کد HEX: #1084BA
+برای افزایش تیرگی:
+کاهش مقدار تیره در رنگ اصلی، مثلاً کاهش مقدار RGB برای حالت hover به 0, 93, 147. 
+کد HEX: #005D93
+  
+  
+  */
