@@ -36888,7 +36888,7 @@ body>.le_panel .le_edit,
     display: flex !important;
     justify-content: space-between !important;
     gap: 40px;
-    background-color: rgba(8, 116, 170);
+    background-color: rgb(53, 79, 91);
 }
 
 .tnc__navbar--container-fluid {
@@ -36912,43 +36912,92 @@ body>.le_panel .le_edit,
 
 .dropdown-menu.tnc__dropdown-menu {
     right: 0 !important;
-    background-color:  #1084BA;;
+    background-color: rgb(53, 79, 91);
 
 }
 .navbar-inverse .dropdown-menu li a:hover {
-    background: #005D93;
+    background: rgb(53, 79, 91);
     color: #fff;
 }
 
 .navbar-inverse .dropdown-menu li a{
-    background-color:  #1084BA;
+    background-color:  rgb(53, 79, 91);
     border-bottom: 1px solid #fff;
 }
 
 .dropdown-menu.tnc__globalLinks {
     left: 0;
     right: unset;
-    background-color:  #1084BA;;
+    background-color:  rgb(53, 79, 91);
 
 }
 .navbar-inverse .navbar-nav > li > a.with-home-icon:hover {
     color:  #fff;
 }
 .searchform .query_string {
-    background-color:  #1084BA;;
+    background-color:  rgb(53, 79, 91);
     -webkit-box-shadow: unset;
 }
 .navbar-form.searchform .input-group-btn {
-    background-color:  #1084BA;;
+    background-color:  rgb(53, 79, 91);
 }
 .desktop_notifications .dropdown-menu {
-    background-color:  #1084BA;;
+    background-color: rgb(53, 79, 91);
 
+}
+
+#pagecontent> .error {
+    color: #392C30A6;
+  background: #08F03873;
+}
+#pagecontent> .error a {
+    color: #392C30A6;
+}
+.button-toggle-expanded {
+    background-color: rgb(53, 79, 91);
+}
+.currentTab #moduleTab_Accounts{
+    color: #392C30A6;
+    font-family: iransans;
+}
+.navbar-inverse .nav > .topnav .currentTab a {
+    color: #fff;
+  font-family: iransans;
+  font-size: 10px;
+}
+/*.content #tab-actions > a {
+    background-color: #08F03873;
+}
+ .content #tab-actions > .dropdown-menu {
+  background-color: #08F03873;
+}
+.content #tab-actions > .dropdown-menu li {
+    background-color: #08F03873;
+    border-bottom: 1px solid #fff;
+}
+.content #tab-actions > .dropdown-menu li input {
+    background-color: #08F03873;
+} */
+.desktop_notifications > .btn-success:hover {
+    color: #fff;
+}
+.globalLinks-desktop:hover {
+    color: #fff;
+}
+.create.quickcreatetop .dropdown-toggle {
+    background-color: transparent;
+}
+input[type="submit"].button , input[type="submit"].button:hover{
+    color: #392C30A6;
+  background: #08F03873;
+}
+.navbar-inverse .nav > .topnav > span.currentTab > a{
+    border-top: 3px solid #fff;
 }
 
 #globalLinks>.dropdown-toggle,
 #desktop_notifications>.alertsButton {
-    background-color: rgba(8, 116, 170);
+    background-color:  rgb(53,79,91);
 }
 
 /*  footer  */
@@ -37002,13 +37051,17 @@ body>.le_panel .le_edit,
 }
 
 .topnav:hover{
-background-color: #1084BA;
+background-color: rgb(53, 79, 91);
 }
 
 .navbar-inverse .nav>.topnav>span.notCurrentTab>a:hover {
-    background-color: #1084BA;
+    background-color: rgb(53, 79, 91);
     border-top: 3px solid #fff;
     color: #fff;
+}
+
+.sidebar__tnc{
+    background-color: rgb(53,79,91);
 }
 /* 
   برای افزایش روشنایی:

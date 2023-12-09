@@ -768,7 +768,7 @@
         <a id="buttontoggle" class="buttontoggle"><span></span></a>
 
         <div {if isset($smarty.cookies.sidebartoggle) && $smarty.cookies.sidebartoggle == 'collapsed'}style="display:none"{/if}
-             class="sidebar">
+             class="sidebar sidebar__tnc">
 
                 <div id="actionMenuSidebar" class="actionMenuSidebar">
                     {foreach from=$moduleTopMenu item=module key=name name=moduleList}
